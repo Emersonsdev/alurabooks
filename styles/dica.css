@@ -1,0 +1,63 @@
+.dica {
+    background-color: var(--branco);
+    margin: 1.25rem 1.5rem;
+    padding: 1.25rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);     
+}
+
+.dica__conteudo {
+    display: flex;
+    gap: 1rem;
+}
+
+.dica__estrelas {
+    width: 50%;
+}
+
+.dica__textos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.dica__textos__subtitulo {
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+
+.dica__textos__titulo {
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.dica__textos__paragrafo {
+    font-size: 0.875rem;
+}
+
+.dica__imagem {
+    width: 45%;
+}
+
+.dica__botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.dica__botoes__icones {
+    display: flex;
+    gap: 1.5rem;
+    padding-left: 1rem;
+}
+
+.dica__botoes__link {
+    background-color: var(--cor-primaria);
+    width: 45%;
+    font-weight: 700;
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem 0;
+    max-width: 265px;
+}

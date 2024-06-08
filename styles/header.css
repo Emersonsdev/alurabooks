@@ -1,5 +1,5 @@
 .cabecalho__menu-hamburguer {
-    width: 24px;
+    width: 32px;
     height: 24px;
     background-image: url("../assets/Menu.svg");
     display: inline-block;
@@ -13,16 +13,13 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 0em 1em;
 }
 
 .container {
     display: flex;
     align-items: center;
-}
-
-.container__imagem {
-    padding: 1em;
+    gap: 2rem;
+    padding: 1rem 1.5rem;
 }
 
 .container__botao {
