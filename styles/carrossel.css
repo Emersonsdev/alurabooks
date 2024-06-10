@@ -26,3 +26,28 @@
 .swiper-button-prev , .swiper-button-next {
     display: none;
 }
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        font-size: 1.6rem;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .swiper-pagination {        
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .swiper-button-prev , .swiper-button-next {
+        display: block;
+        --swiper-navigation-size: 35px;
+        --swiper-navigation-top-offset: 60%;
+        --swiper-navigation-sides-offset: 0px;
+        --swiper-navigation-color: var(--cor-secundaria);
+    }
+    .swiper {
+        width: 70%;
+    }
+
+}

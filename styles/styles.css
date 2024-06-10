@@ -10,8 +10,10 @@
     --cor-primaria: #EB9B00;
     --cor-secundaria: #002F52;
     --branco: #FFFFFF;
+    --preto: black;
     --cor-de-fundo: #EBECEE;
     --fonte-principal: "Poppins", sans-serif;
+    --fonte-secundaria: "Josefin Sans", sans-serif;
 }
 
 body {
