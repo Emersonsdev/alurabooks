@@ -61,6 +61,10 @@
     display: none;
 }
 
+.container__menu__texto {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
     .cabecalho {
         padding: 1.25rem 5rem;
@@ -124,5 +128,24 @@
     .container__menu__botao {
         display: none;
     }
+}
 
+@media screen and (min-width: 1728px) {
+    .container__menu__item__desktop {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .container__menu__texto {
+        display: block;
+        font-size: 20px;
+        color: var(--preto);
+        text-decoration: none;
+    }
+
+    .container-centro {
+        margin-right: auto;
+        margin-left: 3rem;
+    }
 }

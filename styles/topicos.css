@@ -44,3 +44,16 @@
         font-size: 1.5rem;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .topicos__titulo {
+        font-size: 2rem;
+        font-weight: 300;
+        padding-top: 2rem;
+    }
+
+    .topicos__lista {
+        max-width: 800px;
+        margin: 2rem auto;
+    }
+}

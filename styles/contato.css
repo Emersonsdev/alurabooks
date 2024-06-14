@@ -55,5 +55,22 @@
     .contato__titulo {
         font-size: 1.5rem;
     }
+}
 
+@media screen and (min-width: 1728px) {
+    .contato {
+        justify-content: center;
+        padding: 5rem;
+    }
+
+    .contato__textos {
+        width: 30%;
+    }
+
+    .contato__email {
+        width: 20%;
+    }
+
+    .contato__paragrafo
+    font-size: 1rem;
 }

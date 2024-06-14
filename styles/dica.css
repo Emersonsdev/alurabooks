@@ -85,3 +85,22 @@
         width: 30%;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .dica {
+        margin-top: 6rem;
+    }
+
+    .dica__textos__subtitulo {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .dica__textos__titulo {
+        font-size: 1.25rem;
+    }
+
+    .dica__textos__paragrafo {
+        font-size: 1.2rem;
+    }
+}
