@@ -33,11 +33,15 @@
 
 @media screen and (min-width: 1024px) {
     .topicos {
-        padding: 2rem 5rem;
+        padding: 2rem 6rem;
     }
 
     .topicos__titulo {
         font-size: 1.5rem;
+    }
+
+    .topicos__lista__item {
+        padding: 1.5rem 2rem;
     }
 
     .topicos__lista__item__link {

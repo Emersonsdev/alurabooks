@@ -12,8 +12,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;    
-    padding: 1rem 1.5rem;
+    position: relative;
+    padding-right: 1.5rem;
 }
 
 .container {
@@ -28,6 +28,18 @@
 
 .lista-menu {
     display: none;    
+}
+
+.container__botao:checked~.container__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url(../assets/Menu\ Aberto.svg);
+}
+
+.container__rotulo {
+    padding: 1.5rem 1.5rem;
+}
+
+.container__botao:checked~.container__rotulo {
+   background: var(--cor-secundaria)
 }
 
 .container__botao:checked~.lista-menu{
@@ -67,7 +79,11 @@
 
 @media screen and (min-width: 1024px) {
     .cabecalho {
-        padding: 1.25rem 5rem;
+        padding: 0rem 4rem;
+    }
+
+    .container__rotulo {
+        display: none;
     }
     
     .container__titulo {
@@ -88,20 +104,20 @@
 
     .container {
         gap: 0rem;
-    }
-
-    .container-direita {
-        gap: 3rem;
-    }
+    }    
 
     .container__imagem__transparente {
         display: none;
     }
 
+    .item-sacola {
+        margin-right: 2.5rem;
+    }
+
     .container__menu {
         display: flex;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
         color: var(--preto);
     }
 
@@ -110,16 +126,15 @@
         margin: 0.75rem;
         text-decoration: none;
         color: var(--preto);
+        padding: 1.25rem 1rem;
     }
 
     .container__menu__botao:checked ~ .lista-menu {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
-        padding: 1.5rem;
         position: absolute;
-        top: 100%;
-        width: 15vw;
+        top: 75%;
+        width: 18vw;
         background-color: var(--branco);
         box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
         z-index: 1;
@@ -127,7 +142,44 @@
 
     .container__menu__botao {
         display: none;
+    }        
+
+    .lista-menu__item:hover {
+        background-color: var(--cor-secundaria);
     }
+
+    .lista-menu__item:hover > .lista-menu__link {
+        color: var(--branco);
+    }
+
+    .opcoes__rotulo {
+        padding: 1.25rem 1rem;
+    }
+
+    .lista-menu__item {
+        padding: auto;
+    }
+
+    .opcoes-links {
+        font-weight: 500;
+        display: block;
+        padding: 1.5rem 2rem;
+    }
+
+    .opcoes__rotulo:hover {
+        background-color: var(--cor-secundaria);
+        color: var(--branco);
+    }
+
+    .container__menu__botao:checked ~ .opcoes__rotulo {
+        background-color: var(--cor-secundaria);
+        color: var(--branco);
+    }
+
+    .container__menu__link:hover {
+        background-color: var(--cor-secundaria);
+        color: var(--branco);
+    }    
 }
 
 @media screen and (min-width: 1728px) {
